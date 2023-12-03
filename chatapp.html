@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ChatBox</title>
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+                font-family: Cambria;
+                box-sizing: border-box;
+            }
+            body{
+                height:100vh;
+                background-color: antiquewhite;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .container{
+                background-color: rgb(192, 230, 255);
+                width:450px;
+                height:80vh;
+                display: flex;
+                flex-direction: column;
+                box-shadow: 2px 2px 20px rgba(0,0,0,0.4);
+
+
+            }
+            .header h1{
+                color:rgb(38, 38, 129);
+                padding: 20px;
+            }
+            .body{
+                flex:1;
+                color:white;
+                background-color: rgba(0,0,0,0.5);
+                padding: 20px 30px;
+            }
+            .message{
+                background-color: rgb(30, 199, 255);
+                padding: 10px;
+                color: white;
+                width: fit-content;
+                border-radius: 10px;
+                margin-bottom: 10px;
+            }
+            .user_message{
+                margin-left:auto;
+                background-color: wheat;
+                color: black;
+
+            }
+            .footer form{
+                display: flex;
+
+            }
+            form input{
+                height: 40px;
+                border: none;
+                outline: none;
+                padding-left: 180px;
+                font-size: 16px;
+
+            }
+            form button{
+                flex: 1;
+                font-size: 15px;
+                padding: auto;
+                color:white;
+                border: none;
+                outline: none;
+                background-color: rgb(30, 199, 255);
+                
+
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="header">
+                <h1>WEBCHAT</h1>
+            </div>
+            <div class="body">
+                <p class="message">Hello..</p>
+                <p class="message">Good evening..</p>
+
+                <p class=" message user_message">Hi..</p>
+                <p class=" message user_message">Good evening..</p>
+            </div>
+            <div class="footer">
+                <form>
+                    <input type="text" name="">
+                    <button>SEND</button>
+                </form>
+            </div>
+
+        </div>
+    </body>
+</html>
